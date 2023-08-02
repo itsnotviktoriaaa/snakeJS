@@ -30,7 +30,7 @@ export class Food {
         this.context.fillStyle = 'white';
         this.context.beginPath();
         this.context.arc(this.foodPosition.x * this.positionsSize - this.foodRadius,
-            this.foodPosition.x * this.positionsSize - this.foodRadius, this.foodRadius, 0, 2 * Math.PI);
+            this.foodPosition.y * this.positionsSize - this.foodRadius, this.foodRadius, 0, 2 * Math.PI);
         this.context.fill();
     }
 
